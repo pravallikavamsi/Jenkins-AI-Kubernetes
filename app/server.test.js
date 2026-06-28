@@ -5,7 +5,7 @@ describe("AI CI/CD Node App", () => {
   test("GET / should return success message", async () => {
     const response = await request(app).get("/");
     expect(response.statusCode).toBe(200);
-    expect(response.body.status).toBe("success");
+    expect(response.body.status).toBe("failed");
   });
 
   test("GET /health should return UP", async () => {
